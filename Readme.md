@@ -1,6 +1,9 @@
 License: GPL
+
 Languages: PHP and Javascript
+
 Credits: caseyscarborough for his awesome github activity code. :heart:
+
 Requirements: Wordpress 4.5.x or above
 
 Created this because didn't like the bland looks of current Wordpress github activity plugins.
