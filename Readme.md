@@ -13,6 +13,6 @@ Pretty simple to use:
   2. Use shortcode [github-activity] where you would like it. Configurable options below.
 
 Options:
-  1. username="stopspazzing"
+  1. username="" // required
   2. repository="" // optional
   3. limit="20" // optional
