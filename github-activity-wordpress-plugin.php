@@ -2,7 +2,7 @@
 /*
 Plugin Name: Github Activity Wordpress Plugin
 Plugin URI: http://stopspazzing.com
-Description: 
+Description: Displays Github activity in a fancy way via shortcode.
 Version: 0.2
 Author: Jeremy Zimmerman
 Author URI: http://stopspazzing.com
