@@ -1,9 +1,11 @@
 <?php
 /*
 Plugin Name: Fancy Github Activity
+Plugin URI: https://github.com/stopspazzing/fancy-github-activity
 Description: Displays Github activity in a fancy way via shortcode.
 Version: 1.0
 Author: Jeremy Zimmerman
+Author URI: https://stopspazzing.com
 */
 
 function add_awesomeness() {
