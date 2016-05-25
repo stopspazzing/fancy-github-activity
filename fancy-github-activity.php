@@ -3,32 +3,31 @@
 Plugin Name: Fancy Github Activity
 Plugin URI: https://github.com/stopspazzing/fancy-github-activity
 Description: Displays Github activity in a fancy way via shortcode.
-Version: 1.0
+Version: 1.0.1
 Author: Jeremy Zimmerman
 Author URI: https://stopspazzing.com
 */
 
-function add_awesomeness() {
-  wp_enqueue_style( 'octicons', '//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css');
+function fancy_github_activity_func() {
+  wp_enqueue_style( 'fancy-github-activity-octicons', plugin_dir_url( __FILE__ ) . '/css/octicons.min.css', array(), '2.0.2');
 
-  wp_enqueue_style( 'githubactivitycss', plugin_dir_url( __FILE__ ) . '/css/github-activity.min.css', array(), '1.4');
+  wp_enqueue_style( 'fancy-github-activity-css', plugin_dir_url( __FILE__ ) . '/css/github-activity.min.css', array(), '1.4');
 
-  wp_enqueue_script( 'mustache', '//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js');
+  wp_enqueue_script( 'fancy-github-activity-mustache', plugin_dir_url( __FILE__ ) . '/js/mustache.min.js', array(), '0.7.2');
 
-  wp_enqueue_script( 'githubactivityjs', plugin_dir_url( __FILE__ ) . '/js/github-activity.min.js', array(), '1.4');
+  wp_enqueue_script( 'fancy-github-activity-js', plugin_dir_url( __FILE__ ) . '/js/github-activity.min.js', array(), '1.4');
 }
-add_action( 'wp_enqueue_scripts', 'add_awesomeness' );
+add_action( 'wp_enqueue_scripts', 'fancy_github_activity' );
 
-
-function githubactivity_func( $atts ) {
+function fancy_github_activity_code( $atts ) {
 $atts = shortcode_atts(
 		array(
 			'username' => 'stopspazzing',
 			'repository' => '',
       'limit' => '20',
-		), $atts, 'github-activity' );?>
+		), $atts, 'fancy-github-activity' );?>
   <style>.gha-footer,.gha-header{width: calc(100% - 1px);}.gha-footer{border-top: none;height: auto;}</style>
-  <div id="github-activity-feed"></div>
+  <div id="fancy-github-activity-feed"></div>
   <script>
     var name = "<?php echo $atts['username'];?>";
     var rep = "<?php echo $atts['repository'];?>";
@@ -36,10 +35,10 @@ $atts = shortcode_atts(
     GitHubActivity.feed({
       username: name,
       repository: rep, // optional
-      selector: "#github-activity-feed",
+      selector: "#fancy-github-activity-feed",
       limit: max // optional
     });
   </script>
 <?php
 }
-add_shortcode( 'github-activity', 'githubactivity_func' );
+add_shortcode( 'fancy-github-activity', 'fancy_github_activity_func' );

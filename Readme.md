@@ -10,7 +10,7 @@ Created this because didn't like the bland looks of current Wordpress Github act
 
 Pretty simple to use:
   1. Upload via plugins tab and enable.
-  2. Use shortcode [github-activity] where you would like it. Configurable options below.
+  2. Use shortcode [fancy-github-activity] where you would like it. Configurable options below.
 
 Options:
   1. username="stopspazzing" // required
