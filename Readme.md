@@ -13,6 +13,6 @@ Pretty simple to use:
   2. Use shortcode [fancy-github-activity] where you would like it. Configurable options below.
 
 Options:
-  1. username="stopspazzing" // required
-  2. repository="" // optional
-  3. limit="20" // optional
+  * username="stopspazzing" // required
+  * repository="" // optional
+  * limit="20" // optional
