@@ -2,7 +2,7 @@
 Contributors: stopspazzing
 Tags: github, activity, feed, fancy
 Requires at least: 4.5
-Tested up to: 4.5
+Tested up to: 4.9.2
 Stable tag: trunk
 Donate link: https://paypal.me/stopspazzing
 License: MIT
