@@ -4,7 +4,7 @@ Languages: PHP and Javascript
 
 Credits: [caseyscarborough](https://github.com/caseyscarborough/github-activity) for his awesome github activity code. :heart:
 
-Requirements: Wordpress 4.5.x or above
+Requirements: Wordpress 4.9.x or above
 
 Created this because didn't like the bland looks of current Wordpress Github activity plugins.
 
@@ -13,6 +13,6 @@ Pretty simple to use:
   2. Use shortcode [fancy-github-activity] where you would like it. Configurable options below.
 
 Options:
-  * username="stopspazzing" // required
-  * repository="" // optional
-  * limit="20" // optional
+  1. username="stopspazzing" // required
+  2. repository="" // optional
+  3. limit="20" // optional

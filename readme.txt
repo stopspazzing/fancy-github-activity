@@ -2,7 +2,7 @@
 Contributors: stopspazzing
 Tags: github, activity, feed, fancy
 Requires at least: 4.5
-Tested up to: 4.9.2
+Tested up to: 4.9
 Stable tag: trunk
 Donate link: https://paypal.me/stopspazzing
 License: MIT
@@ -40,6 +40,10 @@ Example:
 1. Shortcode in action on a page.
 
 == Changelog ==
+
+= 1.0.2 =
+* Updated to latest code from [caseyscarborough](https://github.com/caseyscarborough/github-activity).
+* Verified works on 4.9.x WordPress.
 
 = 1.0.1 =
 * Compliance with Wordpress Plugins requirements.
