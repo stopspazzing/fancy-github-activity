@@ -41,6 +41,9 @@ Example:
 
 == Changelog ==
 
+= 1.0.3 =
+* Code cleanup. Removed redundancies. Added plugin icon.
+
 = 1.0.2 =
 * Updated to latest code from [caseyscarborough](https://github.com/caseyscarborough/github-activity).
 * Verified works on 4.9.x WordPress.

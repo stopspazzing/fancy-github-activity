@@ -3,7 +3,7 @@
 Plugin Name: Fancy Github Activity
 Plugin URI: https://github.com/stopspazzing/fancy-github-activity
 Description: Displays Github activity in a fancy way via shortcode.
-Version: 1.0.2
+Version: 1.0.3
 Author: Jeremy Zimmerman
 Author URI: https://stopspazzing.com
 */
@@ -26,7 +26,6 @@ $atts = shortcode_atts(
 			'repository' => '',
       'limit' => '20',
 		), $atts, 'fancy-github-activity' );?>
-  <style>.gha-footer,.gha-header{width: calc(100% - 1px);}.gha-footer{border-top: none;height: auto;}</style>
   <div id="fancy-github-activity-feed"></div>
   <script>
     var name = "<?php echo $atts['username'];?>";

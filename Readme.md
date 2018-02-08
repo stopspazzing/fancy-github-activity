@@ -4,7 +4,7 @@ Languages: PHP and Javascript
 
 Credits: [caseyscarborough](https://github.com/caseyscarborough/github-activity) for his awesome github activity code. :heart:
 
-Requirements: Wordpress 4.9.x or above
+Requirements: Wordpress 4.5 or above
 
 Created this because didn't like the bland looks of current Wordpress Github activity plugins.
 
@@ -16,3 +16,6 @@ Options:
   1. username="stopspazzing" // required
   2. repository="" // optional
   3. limit="20" // optional
+
+  Example:
+  [fancy-github-activity username="stopspazzing"]
